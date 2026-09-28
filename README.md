@@ -81,3 +81,4 @@ I am continuously improving my portfolio and plan to add **Arabic language suppo
 ## 🎨 Acknowledgments
 
 I want to extend a special thank you to **Huy Nguyen** for his original UI design, which I have cloned with his permission. His creative vision has been instrumental in shaping the look and feel of this portfolio.
+"# portfolioUIUX" 
