@@ -1,5 +1,5 @@
-import profile from './profile.webp';
-import profile2 from './profile2.webp';
+import profile from './profile.jpeg';
+import profile2 from './profile2.jpeg';
 import esmail from './esmail.webp';
 import mohammad from './mohammad.webp';
 import workBg1 from './1.webp';

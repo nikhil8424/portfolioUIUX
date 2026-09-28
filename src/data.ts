@@ -4,88 +4,131 @@ export type navLinkType = {
   url: string;
 };
 
+// Project type
+export type projectType = {
+  number: string;
+  title: string;
+  category: string;
+  description: string;
+  type: 'external' | 'figma';
+  url?: string;
+  figmaUrl?: string;
+};
+
 // Nav
 const navLinks = [
   {
-    label: 'Services',
-    url: '#services',
-  },
-  {
-    label: 'Projects',
-    url: '#works',
+    label: 'Work',
+    url: '#work',
   },
   {
     label: 'About',
-    url: '#about-me-section',
+    url: '#about',
   },
   {
-    label: 'Testimonials',
-    url: '#testimonials-section',
+    label: 'Process',
+    url: '#process',
+  },
+  {
+    label: 'Research',
+    url: '#research',
+  },
+  {
+    label: 'Playground',
+    url: '#playground',
   },
   {
     label: 'Contact',
-    url: '#contact-section',
+    url: '#contact',
   },
 ];
+
 const navbarLinks = [
   {
-    label: 'Home',
-    url: '#app',
+    label: 'Nikhil Gupta',
+    url: '#hero',
   },
   ...navLinks,
+  {
+    label: 'Resume',
+    url: '#resume',
+  },
 ];
 
 const socialLinks = [
   {
-    label: 'X',
-    url: 'https://x.com/hetaridev',
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/nikhil-gupta-6b7705288',
   },
   {
-    label: 'Telegram',
-    url: 'https://t.me/e_1_e',
+    label: 'Figma',
+    url: 'https://www.figma.com/@nikhil8424',
   },
   {
     label: 'GitHub',
-    url: 'https://github.com/hetari',
+    url: 'https://www.github.com/nikhil8424',
   },
   {
-    label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/hetaridev/',
+    label: 'Medium',
+    url: 'https://medium.com/@guptanikhil8424',
   },
 ];
 
-const resourceLinks = [
+// Projects configuration
+const projects: projectType[] = [
   {
-    label: 'Pillarstack',
-    url: 'https://www.pillarstack.com',
+    number: '01',
+    title: 'My Portfolio',
+    category: 'UI/UX · Portfolio Design · Interaction Design',
+    description: 'My existing portfolio website showcasing UI/UX and product design work.',
+    type: 'external',
+    url: 'https://port-1tpr.vercel.app/',
   },
   {
-    label: 'Figma Template',
-    url: 'https://www.figma.com/community/file/1328038510191576951/project-starter-template',
+    number: '02',
+    title: 'Amazon Redesign',
+    category: 'UX Audit · E-commerce · Product Design',
+    description: 'An e-commerce UX redesign and exploration project.',
+    type: 'figma',
+    figmaUrl: 'https://www.figma.com/design/Q3cR2DbUI08GtapXkuj064/Untitled?node-id=0-1&t=iXteS1CBfqbdydic-1',
+  },
+  {
+    number: '03',
+    title: 'FoodMap',
+    category: 'Product Design · Food Tech · UX/UI',
+    description: 'A digital product experience for discovering and ordering food from local/home kitchens.',
+    type: 'figma',
+    figmaUrl: 'https://www.figma.com/design/w9dXLgxxmEtJtLogqvM6XA/food-map?node-id=0-1&p=f&t=8I014UTySFpuAkMu-0',
+  },
+  {
+    number: '04',
+    title: 'Travel Website',
+    category: 'Web Design · UX/UI · Interaction Design',
+    description: 'A travel planning and discovery experience.',
+    type: 'figma',
+    figmaUrl: 'https://www.figma.com/design/t49D11S2nf42BJo42JnM4e/travel?node-id=0-1&p=f&t=u8wPqEwSFPALpeKL-0',
+  },
+  {
+    number: '05',
+    title: 'PawCare',
+    category: 'UI/UX · Healthcare · Platform Design',
+    description: 'An animal-care platform focused on creating a simple and accessible experience for pet owners.',
+    type: 'figma',
+    figmaUrl: 'https://www.figma.com/design/EpXpABpPoVHdtkOOi5CSbD/pawcare--animal-care-platform?node-id=0-1&p=f&t=rD8WXR9fFQXka0ib-0',
+  },
+  {
+    number: '06',
+    title: 'Research Paper',
+    category: 'Research · Academic · Experimental',
+    description: 'Experimental research paper on [topic] - pre-publication version available on Zenodo.',
+    type: 'external',
+    url: 'https://zenodo.org/records/21543953',
   },
 ];
-
-const heroText =
-  'A freelance full-stack developer, making good shit since 2023, hiding bad shit since 2023.';
-
-const locationPlace = `15°22'22.0"N 44°10'39.5"E`;
-const locationCountry = 'Yemen, Sanaa';
-
-// cal.com
-const dataCalNamespace = '30min';
-const dataCalLink = 'brhoom/30min';
-const dataCalConfig =
-  '{"layout":"month_view", "theme": "dark", "brand": "#8C8C73"}';
 
 export {
   socialLinks,
-  resourceLinks,
-  heroText,
-  locationPlace,
-  locationCountry,
   navLinks,
   navbarLinks,
-  dataCalNamespace,
-  dataCalLink,
-  dataCalConfig,
+  projects,
 };

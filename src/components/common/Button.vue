@@ -1,7 +1,7 @@
 <template>
-  <component  :is="url ? 'a' : 'button'" 
+  <component  :is="url ? 'a' : 'button'"
     @click="()=>{
-      if (url) {
+      if (url && !isExternal) {
         gotoSection(url);
       }
     }"
@@ -9,6 +9,8 @@
     class="leading-base group pointer-events-auto relative h-full max-w-full transform-none overflow-clip rounded-full bg-flax-smoke-950 px-5 py-2 text-[1rem] font-semibold uppercase tracking-normal text-flax-smoke-100 sm:text-sm"
     :class="$attrs.class"
     :href="url"
+    :target="isExternal ? '_blank' : '_self'"
+    :rel="isExternal ? 'noopener noreferrer' : undefined"
   >
     <span
       class="ease-expo flex-center absolute bottom-0 left-0 z-10 my-auto size-full w-full will-change-auto translate-y-full text-nowrap rounded-t-[15rem] bg-flax-smoke-500 font-fancy transition-all duration-700 group-hover:translate-y-0 group-hover:rounded-none"
@@ -38,6 +40,11 @@ import { gotoSection } from '@/functions';
     url: {
       type: String,
       required: false,
+    },
+    isExternal: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   });
 </script>

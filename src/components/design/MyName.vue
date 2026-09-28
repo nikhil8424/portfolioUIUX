@@ -1,10 +1,11 @@
 <template>
-  <h1 class="sr-only">Ebraheem Alhetari - ابراهيم الهتاري</h1>
-  <h2 class="sr-only">Web Developer - مطور ويب</h2>
+  <h1 class="sr-only">Nikhil Gupta</h1>
+  <h2 class="sr-only">UI/UX Designer · Product Designer</h2>
 
-  <MyEnName id="svg-my-en-name" :class="$attrs.class" />
+  <h2 id="svg-my-en-name" :class="$attrs.class" class="font-fancy heading-display leading-none font-extrabold uppercase">
+    NIKHIL GUPTA
+  </h2>
 </template>
 
 <script setup lang="ts">
-  import { MyEnName } from '..';
 </script>

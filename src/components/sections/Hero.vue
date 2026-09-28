@@ -38,8 +38,7 @@
             </div>
 
             <p class="sr-only">
-              A freelance full-stack developer, cutting-edge technologies to
-              deliver comprehensive solutions for your business.
+              I design digital experiences that turn complex problems into simple, intuitive products.
             </p>
             <p
               v-html="whoAmI"
@@ -49,14 +48,7 @@
 
             <div class="relative origin-left overflow-hidden sm:scale-150">
               <div id="contact-btn" class="flex -translate-y-full">
-                <!-- <Button
-                  :data-cal-namespace="dataCalNamespace"
-                  :data-cal-link="dataCalLink"
-                  :data-cal-config="dataCalConfig"
-                  class="contact"
-                  label="Get in touch"
-                /> -->
-                <Button label="Get in touch" url="https://wa.me/967775367671" />
+                <Button label="VIEW MY WORK →" url="#work" />
               </div>
             </div>
           </div>
@@ -69,7 +61,7 @@
             <img
               id="profile-img"
               :src="profile"
-              alt="Ebraheem profile"
+              alt="Nikhil Gupta profile"
               class="size-full scale-90 rounded-lg object-cover object-top brightness-110 grayscale"
             />
           </div>
@@ -85,12 +77,12 @@
               <p
                 class="3xl:text-base block leading-snug font-medium -tracking-tight uppercase"
               >
-                Available for freelance work
+                OPEN TO DESIGN OPPORTUNITIES
               </p>
               <h3
                 class="3xl:heading-1 heading-1-alt font-fancy block leading-none font-bold -tracking-tight"
               >
-                {{ AvailableForWorkDate }}
+                UI/UX DESIGNER · PRODUCT DESIGNER
               </h3>
             </div>
           </div>
@@ -106,16 +98,13 @@
   import { MyName, Star } from '../design';
   import { Button } from '@/components/common';
   import { profile } from '@/assets/images';
-  import { getAvailableForWorkDate, textSplitterIntoChar } from '@/functions';
-  // import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
+  import { textSplitterIntoChar } from '@/functions';
 
   const whoAmI = ref(
-    'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.',
+    'I design digital experiences that turn complex problems into simple, intuitive products.',
   );
-  const AvailableForWorkDate = ref('');
 
   onBeforeMount(() => {
     whoAmI.value = textSplitterIntoChar(whoAmI.value);
-    AvailableForWorkDate.value = getAvailableForWorkDate();
   });
 </script>

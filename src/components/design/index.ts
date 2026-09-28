@@ -5,7 +5,6 @@ import MyName from './MyName.vue';
 import Star from './Star.vue';
 import SamsungError from './SamsungError.vue';
 import Marquee from './Marquee.vue';
-import Slider from './Slider.vue';
 import Footer from './Footer.vue';
 
 import Cursor from './Cursor.vue';
@@ -17,7 +16,6 @@ export {
   LoadingScreen,
   SamsungError,
   Marquee,
-  Slider,
   Footer,
   Cursor,
 };

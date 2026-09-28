@@ -1,6 +1,6 @@
 <template>
   <section
-    id="about-me-section"
+    id="about"
     class="common-padding text-flax-smoke-200 relative z-10 overflow-y-clip rounded-b-3xl bg-[#0B0B0A] shadow-2xl will-change-auto sm:mt-0"
   >
     <div class="md:column-gap grid grid-cols-12">
@@ -37,31 +37,25 @@
         <img
           :src="profile2"
           class="aspect-[1/1.5] rounded-lg object-cover object-top mix-blend-screen brightness-90 grayscale"
-          alt="Headshot of Ebraheem facing a camera"
+          alt="Headshot of Nikhil Gupta"
         />
       </div>
       <div class="col-span-11 mt-10 md:col-span-8 md:col-start-6">
         <p
           class="heading-4 relative w-full max-w-[40ch] leading-snug font-medium text-balance"
         >
-          With a passion for design and development, I take projects from
-          ideation to launch, ensuring a seamless journey that leaves a lasting
-          positive impact on the digital landscape and your business.
+          I'm Nikhil, a UI/UX and product designer with a background in computer science.
         </p>
 
         <div
           class="text-flax-smoke-300 mt-[5%] flex justify-start gap-10 sm:gap-20"
         >
           <p class="heading-6 text-flax-smoke-300/85 text-center text-nowrap">
-            ( ABOUT ME )
+            ( ABOUT )
           </p>
           <p class="heading-6 font-fancy w-full text-balance sm:max-w-[40ch]">
-            Creating great web experiences is my primary focus. I ensure each
-            project leaves users with a feel-good sensation through meticulous
-            attention to detail and user-centric design principles. <br /><br />
-            When I'm not immersed in web development and design, you can find me
-            sharing insights about my freelance journey on <i>&Xopf;</i>,
-            loudly, playing music (Funk), or just relaxing.
+            I enjoy turning complex ideas into simple digital experiences — from user flows and information architecture to polished interfaces and interactions. <br /><br />
+            My technical background gives me another perspective on design. I care about how products look, how they work, and how technology can support the experience behind them.
           </p>
         </div>
       </div>
@@ -81,14 +75,9 @@
 
   const aboutMe = ref('ٍSelected Projects /');
 
-  // const initialPath = ref(`M0 0H${width.value}  V${height.value} H0 Z`);
-  // const targetPath = ref(
-  //   `M0 0H${width.value}L${width.value * 0.9} ${height.value}H${width.value * 0.1}L0 0Z`,
-  // );
-
   onBeforeMount(() => {
     aboutMe.value = textSplitterIntoChar(
-      'Programmer, Developer, Web-animator/',
+      'DESIGNER, PROBLEM SOLVER, TECH ENTHUSIAST/',
       true,
       true,
     );
@@ -106,6 +95,6 @@
       },
     );
 
-    animateAboutMeSectionLeave('#about-me-section');
+    animateAboutMeSectionLeave('#about');
   });
 </script>

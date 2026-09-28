@@ -44,6 +44,7 @@
 
   <main class="relative min-h-full">
     <Hero />
+    <Introduction />
     <div
       class="text-flax-smoke-200 relative rounded-t-3xl bg-[#0B0B0A] py-[5%]"
     >
@@ -52,8 +53,12 @@
       <Works />
     </div>
 
+    <Process />
+    <DesignTechnology />
     <aboutMe />
-    <People />
+    <Research />
+    <Playground />
+    <Writing />
     <Contact />
   </main>
 
@@ -63,11 +68,16 @@
 <script setup lang="ts">
   import {
     Hero,
-    People,
     Services,
     Works,
     aboutMe,
     Contact,
+    Introduction,
+    Process,
+    DesignTechnology,
+    Playground,
+    Writing,
+    Research,
   } from '@/components/sections';
   import { onMounted, type Ref, ref, watch } from 'vue';
   import {
