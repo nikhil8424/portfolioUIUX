@@ -6,35 +6,34 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio/',
+  base: '/portfolioUIUX/',
+
   build: {
     sourcemap: true,
-    // terserOptions:
     chunkSizeWarningLimit: 1600,
   },
+
   plugins: [
     tailwindcss(),
     vue(),
     robots(),
+
     sitemap({
-      hostname: 'https://hetari.github.io/',
-      basePath: 'portfolio',
-      changefreq: 'hourly', // default: 'daily'
+      hostname: 'https://nikhil8424.github.io/',
+      basePath: 'portfolioUIUX',
+      changefreq: 'hourly',
       priority: 1,
     }),
   ],
+
   resolve: {
     alias: {
       '@': '/src',
     },
   },
-  server: {
-    // watch: {
-    //   usePolling: true,
-    //   interval: 1000,
-    //   ignored: ['!**/src/**/*.{js,ts,jsx,tsx}'],
-    // },
-  },
+
+  server: {},
+
   optimizeDeps: {
     exclude: ['@tailwindcss/vite'],
     force: true,
