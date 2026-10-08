@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="!isLoading"
+    v-show="!isLoading"
     id="loading-screen"
     class="flex-center fixed bottom-0 z-99999 size-full cursor-wait"
   >
