@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolioUIUX/',
+  base: '/',
 
   build: {
     sourcemap: true,
@@ -19,8 +19,7 @@ export default defineConfig({
     robots(),
 
     sitemap({
-      hostname: 'https://nikhil8424.github.io/',
-      basePath: 'portfolioUIUX',
+      hostname: 'https://portfolio-uiux-6i5g.vercel.app/',
       changefreq: 'hourly',
       priority: 1,
     }),
